@@ -126,48 +126,6 @@
         <activity android:name=".item.lifecycle.LifeCycleActivity" />
         <activity android:name=".item.lifecycle.LifeCycleBActivity" />
 
-        <receiver
-            android:name=".receiver.RelativeStartupReceiver"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.UCMobile.intent.action.COMMAND" />
-                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
-                <action android:name="com.huawei.android.push.intent.RECEIVE" />
-                <action android:name="com.huawei.intent.action.PUSH" />
-                <action android:name="com.huawei.intent.action.PUSH_STATE" />
-                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
-                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
-                <action android:name="com.taobao.taobao.intent.action.COMMAND" />
-                <action android:name="android.intent.action.PACKAGE_REMOVED" />
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="android.intent.action.USER_PRESENT" />
-                <action android:name="com.taobao.accs.intent.action.COMMAND" />
-                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
-                <action android:name="anetwork.channel.intent.action.COMMAND" />
-                <action android:name="com.xiaomi.push.PING_TIMER" />
-                <action android:name="com.wuba.im.action.bangbang_receive_msg" />
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-                <action android:name="com.taobao.calendar.sdk.alarm.PLAY" />
-                <action android:name="com.taobao.calendar.sdk.alarm.RESET" />
-                <action android:name="com.taobao.calendar.sdk.alarm.STOP" />
-                <action android:name="com.taobao.calendar.sdk.alarm.SYN" />
-                <action android:name="com.taobao.calendar.sdk.alarm.KILL" />
-                <action android:name="com.taobao.calendar.sdk.alarm.TIMEOUT" />
-                <action android:name="android.intent.action.TIME_SET" />
-                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
-                <action android:name="android.intent.action.LOCALE_CHANGED" />
-                <action android:name="com.taobao.calendar.sdk.alarm.NOTIFY" />
-                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
-                <action android:name="com.xiaomi.mipush.ERROR" />
-                <action android:name="com.alibaba.mobileim.uploadvideo" />
-                <action android:name="org.agoo.android.intent.action.RECEIVE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
-
         <service android:name=".service.RelativeStartupService">
             <intent-filter>
                 <action android:name="org.agoo.android.intent.action.RECEIVE" />
