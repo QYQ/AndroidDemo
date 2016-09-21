@@ -6,7 +6,7 @@ import android.util.Log;
 
 import com.kent.learningdemo.R;
 
-public class LifeCycleBActivity extends AppCompatActivity {
+public class LifeCycleBActivity extends LifeCycleActivity {
 
     private static final String TAG = "B";
 
@@ -14,7 +14,7 @@ public class LifeCycleBActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_cycle_b);
-        Log.e(TAG, "onCreate");
+        Log.e(TAG, "onCreate B");
     }
 
     @Override

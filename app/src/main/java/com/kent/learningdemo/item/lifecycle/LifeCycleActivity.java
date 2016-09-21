@@ -30,6 +30,8 @@ public class LifeCycleActivity extends Activity {
             }
         });
         Log.e(TAG, "onCreate");
+        finish();
+        return;
     }
 
     @Override
